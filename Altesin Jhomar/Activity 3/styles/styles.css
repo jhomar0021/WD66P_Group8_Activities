@@ -26,6 +26,9 @@ body {
     font-size: 15px;
     margin: 40px;
 }
+table{
+    height: 100px;
+}
 .content{
     display: flex;
     flex-direction: column;
