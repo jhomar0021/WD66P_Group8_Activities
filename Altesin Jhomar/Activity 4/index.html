@@ -8,6 +8,13 @@
             rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
             crossorigin="anonymous">
         <style>
+            body {
+                margin: 0;
+                padding-bottom: 200px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-image: linear-gradient(to bottom right, lightblue,violet,lightgreen);
+            }
             .prof-pic{
                 width: 80%;
                 border-radius: 50px;
@@ -20,38 +27,61 @@
     </head>
     <body class="bg-dark">
 
-        <div>
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Work Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ">Education & Trainings</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Contact Me</a>
-                  </li>
-              </ul>
-        </div>
+        <nav class="navbar navbar-expand-md navbar-light nav-fill bg-warning fixed-top">
 
-        <div class="py-5">
-            <div class="container-fluid row py-5 mx-3 mx-md-0 bg-primary">
+            <button 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbar-nav"
+                aria-expanded="false"
+                aria-label="navigation toggle"
+                class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div 
+                class="collapse navbar-collapse" 
+                id="navbarNav">
+                <ul class="navbar-nav nav-fill container-fluid">
+                    <li class="nav-item active">
+                        <a href="#Home" class="nav-link">
+                            <b>Home</b>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#Work" class="nav-link">
+                            <b>Work Experience</b>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#Educ" class="nav-link">
+                            <b>Education & Training</b>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#Cont" class="nav-link">
+                            <b>Contacts</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="py-5" id="Home">
+            <div class="container-fluid row py-5 mx-md-0 bg-info">
                 <div class="col-md-4 text-center">
                     <img src="imgs/profile.jpg" class="prof-pic px-3">
                 </div>
-                <div class="col-md-8 align-self-center text-center px-3">
-                    <h1>Jhomar Altesin</h1>
-                    <h2>Full-Stack Web Developer</h2>
-                    <hr />
+                <div class="col-md-8 pt-5 align-self-center text-center px-3">
+                    <h1><b>Jhomar Altesin</b></h1>
+                    <h2>Full-Stack Web Developer<hr /></h2>
                 </div>
             </div>
         </div>
 
-        <div class="py-5">
-            <div class="container-fluid row m-sm-0 bg-primary ">
+        <div class="py-5" id="Work" >
+            <div class="container-fluid row m-sm-0 bg-transparent ">
                 <div class="col-md-4 text-center align-self-center px-0">
                     <h1>Work Experience</h3>
                     <hr />
@@ -60,25 +90,40 @@
                     <div>
                         <div>
                             <div>
-                                <h2 class="bg-success">Appen Connect - Social Media Evaluator</h2>
+                                <div class="bg-info">
+                                    <h2>Appen Connect </h2>
+                                    <h2>- Social Media Evaluator</h2>
+                                </div>
                                 <h3>Evaluates the truthfulness of social media contents through online research.</h3>
                             </div>
                             
                         </div>
                         <div>
-                            <h2 class="bg-success">Magsaysay Maritime - Ordinary Seaman</h2>
+                            <div class="bg-info">
+                                <h2>Magsaysay Maritime</h2>
+                                <h2>- Ordinary Seaman</h2>
+                            </div>
                             <h3>Perform duties as assign by the management onboard commercial ships.</h3>
                         </div>
                         <div>
-                            <h2 class="bg-success">Magsaysay Maritime - Deck Cadet</h2>
+                            <div class="bg-info">
+                                <h2>Magsaysay Maritime</h2>
+                                <h2>- Deck Cadet</h2>
+                            </div>
                             <h3>Perform duties as assign by the management onboard commercial ships.</h3>
                         </div>
                         <div>
-                            <h2 class="bg-success">Telstra - Technical Support Representative</h2>
+                            <div class="bg-info">
+                                <h2>Telstra</h2>
+                                <h2>- Technical Support Representative</h2>
+                            </div>
                             <h3>Assist mobile and landline customers on billing and troubleshooting</h3>
                         </div>
                         <div>
-                            <h2 class="bg-success">EGS BlueCross BlueShield- Customer Support Representative</h2>
+                            <div class="bg-info">
+                                <h2>EGS BlueCross BlueShield</h2>
+                                <h2>- Customer Support Representative</h2>
+                            </div>
                             <h3>Answer inquiries of Medical Providers and Patients with regards to Medical Claims and Benefits</h3>
                         </div>
                     </div>
@@ -86,8 +131,8 @@
             </div>
         </div>
 
-        <div class="py-5">
-            <div class="container-fluid row m-sm-0 bg-primary ">
+        <div class="py-5" id="Educ">
+            <div class="container-fluid row m-sm-0 bg-transparent ">
                 <div class="col-md-4 text-center align-self-center px-0">
                     <h1>Education & Training</h1>
                     <hr />
@@ -95,11 +140,11 @@
                 <div class="col-md-8 text-center align-self-center bg-warning px-0 mx-0">
                     <div>
                         <div>
-                            <h2 class="bg-success">Education</h2>
+                            <h2 class="bg-info">Education</h2>
                             <h3>Maritime Academy of Asia and the Pacific - Bachelor of Science in Marine Transportation</h3>
                         </div>
                         <div>
-                            <h2 class="bg-success">Learning and Development (L&D) Interventions/Trainings Attended</h2>
+                            <h2 class="bg-info">Learning and Development (L&D) Interventions/Trainings Attended</h2>
                             <h3>Kodego Bootcamp - Full Stack Web Development</h3>
                         </div>
                     </div>
@@ -107,44 +152,44 @@
             </div>
         </div>
 
-        <div class="py-5">
-            <div class="container-fluid row m-sm-0 bg-primary ">
+        <div class="py-5" id="Cont">
+            <div class="container-fluid row m-sm-0 bg-transparent ">
                 <div class="col-md-4 text-center align-self-center px-0">
-                    <h1>Contant Information</h1>
+                    <h1>Contant information</h1>
                     <hr />
                 </div>
                 <div class="col-md-8 bg-warning px-0 mx-0">
                     <div>
                         <div class="container-fluid row">
-                            <div class="col-md-3 text-md-end py-3">
+                            <div class="col-7 text-end col-md-3 py-3">
                                 <img src="imgs/facebook.webp" class="icons" alt="Facebook">
                             </div>
-                            <div class="col-md-9 align-self-center">
+                            <div class="col-md-9 text-center  text-md-start align-self-center">
                                 <h3>https://www.facebook.com/rafflez0021</h3>
                             </div>
-                            <div class="col-md-3 text-md-end">
+                            <div class="col-7 col-md-3 text-end">
                                 <img src="imgs/Gmail_Icon_(2013-2020).svg.png" class="icons" alt="Facebook">
                             </div>
-                            <div class="col-md-9 align-self-center">
+                            <div class="col-md-9 text-center  text-md-start align-self-center">
                                 <h3>altesin.jhomar@gmail.com</h3>
                             </div>
-                            <div class="col-md-3 text-md-end py-3">
+                            <div class="col-7 col-md-3 text-end py-3">
                                 <img src="imgs/linkedin.png" class="icons" alt="Facebook">
                             </div>
-                            <div class="col-md-9 align-self-center">
+                            <div class="col-md-9 text-center text-md-start align-self-center">
                                 <h3>linkedin.com/in/altesin-jhomar</h3>
                             </div>
                             <div class="col-md-4 text-md-end py-3">
                                 <h3>Mobile :</h3>
                             </div>
-                            <div class="col-md-8 align-self-center py-3">
+                            <div class="col-md-8 text-center  text-md-start align-self-center py-3">
                                 <h3>+639451230607</h3>
                             </div>
                             <div class="col-md-4 text-md-end py-3">
                                 <h3>Home Address :</h3>
                             </div>
-                            <div class="col-md-8 align-self-center py-3">
-                                <h3>850 Lt. Mario Castro st. Caridad, Cavite City, PH 4100</h3>
+                            <div class="col-11 col-md-8 text-center  text-md-start align-self-center py-3">
+                                <h3 class="pb-3">850 Lt. Mario Castro st. Caridad, Cavite City, Philippines 4100</h3>
                             </div>
                         </div>
                         <div>
