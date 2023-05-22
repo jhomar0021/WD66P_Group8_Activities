@@ -1,19 +1,14 @@
-// Get the button
-let mybutton = document.getElementById("myBtn");
+// docked scrolldown part 1
+window.onscroll = function() {myFunction()};
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+var header = document.getElementById("mynavscroll");
+var sticky = header.offsetTop;
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+// docked scrolldown part 2
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("stickynavbar");
   } else {
-    mybutton.style.display = "none";
+    header.classList.remove("stickynavbar");
   }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
 }
