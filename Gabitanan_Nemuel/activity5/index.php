@@ -14,14 +14,17 @@
 	  global $item1, $item2, $item3;
 	  if ($stockqty == $item1){
 	    $stockqty = $item1 - $qty;
+	    $item1 = $stockqty;
 	    return "$item - ($qty) qty | Remaining Stocks = $stockqty \n";
 	  }
 	  if ($stockqty == $item2){
 	    $stockqty = $item2 - $qty;
+	    $item2 = $stockqty;
 	    return "$item - ($qty) qty | Remaining Stocks = $stockqty \n";
 	  }
 	  if ($stockqty == $item3){
 	    $stockqty = $item3 - $qty;
+	    $item3 = $stockqty;
 	    return "$item - ($qty) qty | Remaining Stocks = $stockqty \n";
 	  }
 	  
