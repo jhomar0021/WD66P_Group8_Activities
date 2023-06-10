@@ -36,6 +36,7 @@ function getTotalStock($qty,$item){
     }
     else {
       echo "No Changes";
+      echo "\n";
     }
     
 }
