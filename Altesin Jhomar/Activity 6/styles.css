@@ -3,11 +3,15 @@
     }
     .registration{
         border: solid black;
-        height: 250px;
+        height: 250px auto;
         width: 350px;
         margin: auto;
         margin-top: 30vh;
         
+    }
+    .box-label{
+        border-bottom: solid;
+        padding-bottom: 10px;
     }
     .login-table{
         margin: auto;
