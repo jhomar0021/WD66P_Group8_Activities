@@ -8,18 +8,36 @@ function signIn(){
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     let result = document.getElementById("alert");
+    let resultTxt = document.getElementById("alert-txt");
+
+    result.classList.add("py-3");
 
 
     if(username === defUser && password === defPass){
-       result.innerText= "Successfully signed-in";
+       resultTxt.innerText= "Successfully signed-in";
        result.classList.add("bg-success");
+       result.classList.remove("bg-warning");
+       result.classList.remove("bg-danger");
+       
     }
     else if(username === null || password === null || password === "" || username === ""){
-       result.innerText= "Username/Password is empty";
+       resultTxt.innerText= "Username/Password is empty";
+       result.classList.remove("bg-success");
        result.classList.add("bg-warning");
+       result.classList.remove("bg-danger");
     }
     else{
-       result.innerText= "Invalid Account, Please try again.";
+       resultTxt.innerText= "Invalid Account, Please try again.";
+       result.classList.remove("bg-success");
+       result.classList.remove("bg-warning");
        result.classList.add("bg-danger");
     }  
 }
+
+document.addEventListener("keydown",function(event) {
+
+    if (event.key === "Enter") {
+
+      signIn();
+    }
+  });

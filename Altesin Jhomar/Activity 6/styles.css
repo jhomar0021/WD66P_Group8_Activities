@@ -1,18 +1,49 @@
-    p{
-        display: inline-block;
-    }
-    .registration{
-        border: solid black;
-        height: 250px auto;
-        width: 350px;
-        margin: auto;
-        margin-top: 30vh;
-        
-    }
-    .box-label{
-        border-bottom: solid;
-        padding-bottom: 10px;
-    }
-    .login-table{
-        margin: auto;
-    }
+.registration{
+    border: solid #594f8d;
+    background-color: #fff;
+    border-radius: 5%;
+    height: 250px auto;
+    width: 450px;
+    margin: auto;
+    margin-top: 30vh;   
+    
+}
+
+
+.box-label{
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.login-table{
+    
+    margin: auto;
+}
+.login-table td {
+    padding: 10px;
+    text-align: center;
+}
+.alert{
+    
+}
+
+
+.register{   
+    margin-top: 10%;
+}
+
+#sign-in {
+    border: solid #594f8d;
+    border-radius: 2vh;
+    width: 10vw;
+    height: 5vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+form {
+    margin: auto;
+    margin-top: 5vh;
+    max-width: 80vw;
+    border: solid #594f8d;
+    border-radius: 2vh;
+}
+  
