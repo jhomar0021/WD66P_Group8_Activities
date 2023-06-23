@@ -1,0 +1,14 @@
+    p{
+        display: inline-block;
+    }
+    .registration{
+        border: solid black;
+        height: 250px;
+        width: 350px;
+        margin: auto;
+        margin-top: 30vh;
+        
+    }
+    .login-table{
+        margin: auto;
+    }
