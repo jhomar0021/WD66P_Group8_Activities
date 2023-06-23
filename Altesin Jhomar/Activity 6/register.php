@@ -22,18 +22,10 @@ signup($firstname,$lastname,$birthday,$address,$city,$province,$zipcode,$email,$
 
 function signup($firstname,$lastname,$birthday,$address,$city,$province,$zipcode,$email,$password,$password2,$subscribe){
 
-    if (
-        $firstname == null || $lastname == null || $city == null ||   !isset($province) ||
-        $birthday == null || $address == null || $zipcode == null || 
-        $email == null || $password == null || $password2== null) {
-        echo "worked";
-    }
-    else if ($password !== $password2){
+    if  ($password !== $password2){
         echo "Unable to proceed because your password does not match";
     }
     else{
-
-        
         
         $name = ucwords(strtolower($firstname." ".$lastname));
         $emailLow = strtolower($email);
