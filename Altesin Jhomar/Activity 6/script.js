@@ -7,15 +7,19 @@ let defPass = "password";
 function signIn(){
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
+    let result = document.getElementById("alert");
 
 
     if(username === defUser && password === defPass){
-        document.getElementById("alert").innerHTML= "Successfully signed-in";
+       result.innerText= "Successfully signed-in";
+       result.classList.add("bg-success");
     }
     else if(username === null || password === null || password === "" || username === ""){
-        document.getElementById("alert").innerHTML= "Username/Password is empty";
+       result.innerText= "Username/Password is empty";
+       result.classList.add("bg-warning");
     }
     else{
-        document.getElementById("alert").innerHTML= "Invalid Account, Please try again.";
+       result.innerText= "Invalid Account, Please try again.";
+       result.classList.add("bg-danger");
     }  
 }
