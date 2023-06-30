@@ -1,0 +1,16 @@
+.mainBody{
+    background-color:white;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 100px;
+    border: solid;
+}
+
+.form-check{
+    float: right;
+}
+
+.btn-primary{
+    width: 100%;
+}
